@@ -1,0 +1,56 @@
+---
+import Header from "../components/Header.astro";
+import Logo from "../components/Logo.astro";
+import Splash from "../components/Splash.astro";
+import News from "../components/News.astro";
+import Newsletter from "../components/Newsletter.astro";
+import Map from "../components/Map.astro"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body class="bg-secondary-500 mx-8 my-8 ">
+				<div>
+		<Logo />
+		</div>
+<main>
+			<article>
+			<Splash />
+			</article>
+			<header>
+			<Header />
+	 </header>
+<article>
+     
+	</article>
+<article class="text-dark-500 flex flex-row">
+	<div>
+<img src="sakura_flat.svg" alt="Grafic design of a Sakura tree">
+       </div>
+	   <div class="">
+	<h2 class="text-xl">Where Japan and Denmark meet</h2>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laboriosam animi numquam expedita. Quaerat aut libero, ipsam cum quae vel fuga molestiae similique quia saepe minus amet accusantium nisi et!</p>
+	<h3>Learn more about the festival</h3>
+	</div>
+</article>
+		<h2 class="text-purple text-2xl text-center py-8">Latest News</h2>
+	<div class="flex flex-row">
+	<News />
+	<News />
+	<News />
+	</div>
+	<div>
+		<Newsletter />
+	</div>
+	<div>
+		<Map />
+	</div>
+		</main>
+	</body>
+</html>
