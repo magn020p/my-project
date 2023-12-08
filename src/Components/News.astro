@@ -1,10 +1,13 @@
 ---
-const img = Astro.props.img;
+const picture = Astro.props.picture;
+const alttext = Astro.props.alttext;
+const headline = Astro.props.headline;
+const description = Astro.props.description;
 ---
 
-<article class="bg-blue-500 text-dark-800 m-8 p-8 rounded-lg">
-    {img}
-    <h3 class="text-xl">Overskrift</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus neque enim, quaerat quod animi illum modi rem iusto autem. Repellendus corrupti rerum cupiditate quod culpa eveniet sequi, aliquid voluptatem velit?</p>
-    <h3>Read the story</h3>
+<article class="bg-blue-500 text-dark-500 m-8 p-8 rounded-lg">
+    <img src={picture} alt={alttext} class="w-100">
+    <h3 class="text-xl">{headline}</h3>
+    <p>{description}</p>
+    <a href="" class="hover:underline text-2xl">Read the story</a>
 </article>

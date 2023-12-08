@@ -13,9 +13,10 @@ import Map from "../Components/Map.astro"
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<link rel="stylesheet" href="https://use.typekit.net/ddw8lpb.css">
+		<title>Sakura Festival</title>
 	</head>
-	<body class="bg-white-800 mx-8 my-8">
+	<body class="bg-white-800 m-8 text">
 				<div>
 		<Logo />
 		</div>
@@ -39,11 +40,14 @@ import Map from "../Components/Map.astro"
 	<h3>Learn more about the festival</h3>
 	</div>
 </article>
-		<h2 class="text-purple text-2xl text-center py-8">Latest News</h2>
+		<h2 class="text-purple text-2xl text-center m-8">Latest News</h2>
 	<div class="md:flex flex-row">
-	<News img src="" alt="" />
-	<News img src="" alt="" />
-	<News img src="" alt="" />
+	<News picture="ambassador.webp" 
+	alttext="Ambassador holding a speech" 
+	headline="Ambassador Komo Panoshita meets with the Queen" 
+	description="His Excellency, Ambassador Panoshita, had the honor of meeting with Her Majesty Queen Margrethe II of Denmark on May 18th, 2023. The meeting was held at the Amalienborg Palace in Copenhagen."/>
+	<News picture="faraos.webp" alttext="Faraos Cigarer webstore logo" headline="Exclusive Yatoku manga displayed at Faraos Cigarette" description="This year’s festival will feature an exclusive collection of Yatoku manga, which will be displayed for the first time in Denmark."/>
+	<News picture="sakura_cph.webp" alttext="Picture of statue and sakura trees in Copnehagen" headline="The story behind the original Sakura trees in Copenhagen" description="The Sakura trees in Copenhagen have a rich history dating back to 2005 when the first were planted in Langelinie Park. Since then, the Sakura trees have become a symbol of friendship between Japan and Denmark."/>
 	</div>
 	<div>
 		<Newsletter />
@@ -52,5 +56,14 @@ import Map from "../Components/Map.astro"
 		<Map />
 	</div>
 		</main>
+		<footer class="flex flex-row bg-pink-200">
+			<Logo />
+			<h3 class="text-xs">Embassy of Japan</h3>
+			<p class="m-8">Havneholmen 25, 9F
+1561 København V
+(+45) 3345 5121
+(+45) 3311 3377
+info.cph@ch.mofa.go.jp</p>
+		</footer>
 	</body>
 </html>

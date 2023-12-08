@@ -5,11 +5,12 @@ export default {
     colors: {
       dark: {
         800: "#262525",
-        500: "#414040",
+        500: "#363030",
       },
       pink: {
         800: "#FFC0CB",
         500: "#FFD3DB",
+        200: "#FFE0E5",
       },
       blue: {
         800: "#90D1ED",
@@ -20,6 +21,7 @@ export default {
         500: "#D4D4D4",
       },
     },
+    fontFamily: {},
     extend: {},
   },
   plugins: [],
