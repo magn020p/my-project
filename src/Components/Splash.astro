@@ -2,13 +2,30 @@
 
 ---
 
-<article>
-    <div>
-        <div class="md:m-8">
-                <img src="sakura_festival_baggrund.webp" alt="Picture of sakura trees in Copenhagen" class="rounded-lg">
-    <div/>
-        <h2 class="text-white-800 text-xl">Welcome to<h2/>
-<h1 class="text-white-800 text-3xl">Copenhagen Sakura Festival<h1/>
 
+<div class="grid">
+    <div class="image">
+        <img src="sakura_festival_baggrund.webp" alt="Picture of sakura trees in Copenhagen" class="rounded-lg">
     </div>
-</article>
+    <div class="text">
+    <h2 class="text-white-800 text-xl drop-shadow-md">Welcome to<h2/>
+    <h1 class="text-white-800 text-3xl drop-shadow-md">Copenhagen Sakura Festival<h1/>
+</div>
+</div>
+
+<style>
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 6fr 1fr;
+        grid-template-rows: 2fr 2fr 1fr;
+    }
+    .image {
+        grid-column: 1/4;
+        grid-row:  1/4;
+    }
+    .text {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        
+    }
+</style>

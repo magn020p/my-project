@@ -1,6 +1,5 @@
 ---
 import Header from "../Components/Header.astro";
-import Logo from "../Components/Logo.astro";
 import Splash from "../Components/Splash.astro";
 import News from "../Components/News.astro";
 import Newsletter from "../Components/Newsletter.astro";
@@ -17,20 +16,18 @@ import Map from "../Components/Map.astro"
 		<title>Sakura Festival</title>
 	</head>
 	<body class="bg-white-800 m-8 text">
-				<div>
-		<Logo />
-		</div>
-<main>
-			<article>
-			<Splash />
-			</article>
-			<header>
+				
+		<header>
 			<Header />
+
 	 </header>
-<article>
-     
-	</article>
-<article class="text-dark-500 md:flex flex-row">
+<main>
+			<div>
+			<Splash />
+			</div>
+			
+
+<article class="text-dark-500 md:flex flex-row ">
 	<div class="w-40 place-content-center">
 <img src="sakura_flat.svg" alt="Grafic design of a Sakura tree ">
        </div>
@@ -57,7 +54,7 @@ import Map from "../Components/Map.astro"
 	</div>
 		</main>
 		<footer class="flex flex-row bg-pink-200">
-			<Logo />
+		
 			<h3 class="text-xs">Embassy of Japan</h3>
 			<p class="m-8">Havneholmen 25, 9F
 1561 København V
