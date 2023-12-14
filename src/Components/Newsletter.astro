@@ -2,16 +2,18 @@
 
 ---
 <div class="bg-pink-500 text-dark-800 my-8 md:flex flex-row p-8 rounded-lg">
-    <div>
-<h2 class="text-xl">Dont miss out on anything!</h2>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, sunt! Magni error reprehenderit cupiditate, in commodi ratione accusantium animi ipsa, laborum natus illum, deserunt vel repellat praesentium suscipit repellendus nesciunt!</p>
+    <div class="basis-2/4">
+<h2 class="text-xl p-4">Dont miss out on anything!</h2>
+<p class="p-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, sunt! Magni error reprehenderit cupiditate, in commodi ratione accusantium animi ipsa, laborum natus illum, deserunt vel repellat praesentium suscipit repellendus nesciunt!</p>
 </div>
-<div>
-    <h3 >Enter your E-mail</h3>
-    Formulae
-    <button><h3>Sign up</h3></button>
+<div class="p-4 basis-1/4">
+    <form name="newsletter" netlify>
+         <label for="newsletter-email">Enter your email:</label>
+        <input name="newsletter email" id="newsletter-email" type="email" pattern="email" placeholder="someone@somewhere.dk"/>
+        <button type="submit" class="primaer_knap">Sign up</button>
+        </form>
 </div>
-<div class="py-8">
+<div class="w-60 p-8 m-auto basis-1/4">
     <img src="mail.svg" alt="Letter icon">
     <div/>
 </div>

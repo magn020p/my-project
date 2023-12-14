@@ -1,11 +1,30 @@
 ---
 
 ---
-
+<div>
+	  <div class="logo">
+            <a href="/">
+                <img src="sakura_blomst.svg" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+</div>
 <div class="text-dark-800 text-xl text-center m-8 space-x-10">
-<div class="m-8">
+
     
-    <div class="w-16">
+    <div class="place-items-center md:w-16">
         <a href="index.html" class="text-dark-800 text-3xl">
             <img src="sakura_blomst.svg" alt="Copenhagen Sakura Festival Logo">
             <h3 class="text-sm">Copenhagen<h3/>
@@ -14,23 +33,42 @@
     
   
     </div>
-</div>
-		<ul class="flex flex-row md:gap-14">	
+	<nav class=" bg-pink-200 p-8 rounded-lg">
+		<ul class="flex flex-row md:gap-14 ">	
 			<li>
-	<a class="hover:bg-pink-800" href="index.html">Home</a>
+	<a class="hover:rounded hover:bg-white-800 p-2" href="index.html">Home</a>
 	</li>
 	<li>
-<a class="hover:bg-pink-800" href="#">Programme</a>
+<a class="hover:rounded hover:bg-white-800 p-2" href="#">Programme</a>
 </li>
 <li>
-<a class="hover:bg-pink-800" href="#">Map/Booths</a>
+<a class="hover:rounded hover:bg-white-800 p-2" href="#">Map/Booths</a>
 </li>
 <li>
-<a class="hover:bg-pink-800" href="#">About</a>
+<a class="hover:rounded hover:bg-white-800 p-2" href="#">About</a>
 </li>
 <li>
-<a class="hover:bg-pink-800" href="#">Contact</a>
+<a class="hover:rounded hover:bg-white-800 p-2" href="#">Contact</a>
 </li>
 </ul>
-	</div>
+	</nav>
+</div>
 
+<script>
+	
+const burger = document.querySelector(".burger");
+const nav = document.querySelector("nav");
+const menu = document.querySelector(".menu");
+const links = document.querySelectorAll(".menu li a");
+
+burger.addEventListener("click", () => {
+  burger.classList.toggle("active");
+  nav.classList.toggle("active");
+});
+
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    burger.classList.remove("active");
+    nav.classList.remove("active");
+  });
+});</script>

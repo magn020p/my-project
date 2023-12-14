@@ -3,7 +3,7 @@ import Header from "../Components/Header.astro";
 import Splash from "../Components/Splash.astro";
 import News from "../Components/News.astro";
 import Newsletter from "../Components/Newsletter.astro";
-import Map from "../Components/Map.astro"
+import Map from "../Components/Map.astro";
 ---
 
 <html lang="en">
@@ -13,9 +13,10 @@ import Map from "../Components/Map.astro"
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="https://use.typekit.net/ddw8lpb.css">
+		<link rel="stylesheet" href="style.css">
 		<title>Sakura Festival</title>
 	</head>
-	<body class="bg-white-800 m-8 text">
+	<body class="bg-white-800 m-16 text">
 				
 		<header>
 			<Header />
@@ -27,17 +28,17 @@ import Map from "../Components/Map.astro"
 			</div>
 			
 
-<article class="text-dark-500 md:flex flex-row ">
-	<div class="w-40 place-content-center">
+<article class="text-dark-500 m-8 md:flex flex-row ">
+	<div class="place-items-center place-content-center m-8">
 <img src="sakura_flat.svg" alt="Grafic design of a Sakura tree ">
        </div>
-	   <div class="">
+	   <div class="p-8">
 	<h2 class="text-xl">Where Japan and Denmark meet</h2>
 	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laboriosam animi numquam expedita. Quaerat aut libero, ipsam cum quae vel fuga molestiae similique quia saepe minus amet accusantium nisi et!</p>
 	<h3>Learn more about the festival</h3>
 	</div>
 </article>
-		<h2 class="text-purple text-2xl text-center m-8">Latest News</h2>
+		<h2 class="text-2xl text-center p-8">Latest News</h2>
 	<div class="md:flex flex-row">
 	<News picture="ambassador.webp" 
 	alttext="Ambassador holding a speech" 
@@ -46,7 +47,8 @@ import Map from "../Components/Map.astro"
 	<News picture="faraos.webp" alttext="Faraos Cigarer webstore logo" headline="Exclusive Yatoku manga displayed at Faraos Cigarette" description="This year’s festival will feature an exclusive collection of Yatoku manga, which will be displayed for the first time in Denmark."/>
 	<News picture="sakura_cph.webp" alttext="Picture of statue and sakura trees in Copnehagen" headline="The story behind the original Sakura trees in Copenhagen" description="The Sakura trees in Copenhagen have a rich history dating back to 2005 when the first were planted in Langelinie Park. Since then, the Sakura trees have become a symbol of friendship between Japan and Denmark."/>
 	</div>
-	<div>
+	<div class="p-8">
+		<h2 class="text-2xl text-center p-8">Newsletter</h2>
 		<Newsletter />
 	</div>
 	<div>
@@ -62,5 +64,8 @@ import Map from "../Components/Map.astro"
 (+45) 3311 3377
 info.cph@ch.mofa.go.jp</p>
 		</footer>
+		
 	</body>
+	
 </html>
+
