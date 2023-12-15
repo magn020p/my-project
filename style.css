@@ -5,9 +5,6 @@ header {
   padding: 20px;
 }
 
-.logo img {
-}
-
 nav {
   display: flex;
   align-items: center;
@@ -87,7 +84,6 @@ nav {
     left: 10%;
     width: 81%;
     z-index: 1;
-    
   }
 
   nav.active .menu li {
