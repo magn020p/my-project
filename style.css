@@ -35,7 +35,7 @@ nav {
 }
 
 .menu a:hover {
-  color: #f00;
+  text-decoration: underline;
 }
 
 .burger {
@@ -84,6 +84,7 @@ nav {
     left: 10%;
     width: 81%;
     z-index: 1;
+    border-radius: 4px;
   }
 
   nav.active .menu li {
