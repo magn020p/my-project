@@ -5,7 +5,6 @@ import News from "../components/News.astro";
 import Newsletter from "../components/Newsletter.astro";
 import Map from "../components/Map.astro";
 ---
-
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -17,13 +16,8 @@ import Map from "../components/Map.astro";
 		<title>Sakura Festival</title>
 	</head>
 	<body class="bg-white-800 m-16 text">
-
 			<Header />
-
-			<main>
-			<div>
-			<Splash />
-			</div>
+<main>
 			
 
 <article class="text-dark-500 m-8 md:flex flex-row ">
@@ -32,8 +26,7 @@ import Map from "../components/Map.astro";
        </div>
 	   <div class="p-8 self-center">
 	<h2 class="text-xl">Where Japan and Denmark meet</h2>
-	<p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laboriosam animi numquam expedita. Quaerat aut libero, ipsam cum quae vel fuga molestiae similique quia saepe minus amet accusantium nisi et!</p>
-	<a href="#" class="bg-pink-800 p-4 rounded text-xl">Learn more about the festival</a>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laboriosam animi numquam expedita. Quaerat aut libero, ipsam cum quae vel fuga molestiae similique quia saepe minus amet accusantium nisi et!</p>
 	</div>
 </article>
 		<h2 class="text-2xl text-center p-8">Latest News</h2>
@@ -44,13 +37,6 @@ import Map from "../components/Map.astro";
 	description="His Excellency, Ambassador Panoshita, had the honor of meeting with Her Majesty Queen Margrethe II of Denmark on May 18th, 2023. The meeting was held at the Amalienborg Palace in Copenhagen."/>
 	<News picture="faraos.webp" alttext="Faraos Cigarer webstore logo" headline="Exclusive Yatoku manga displayed at Faraos Cigarette" description="This year’s festival will feature an exclusive collection of Yatoku manga, which will be displayed for the first time in Denmark."/>
 	<News picture="sakura_cph.webp" alttext="Picture of statue and sakura trees in Copnehagen" headline="The story behind the original Sakura trees in Copenhagen" description="The Sakura trees in Copenhagen have a rich history dating back to 2005 when the first were planted in Langelinie Park. Since then, the Sakura trees have become a symbol of friendship between Japan and Denmark."/>
-	</div>
-	<div class="p-8">
-		<h2 class="text-2xl text-center p-8">Newsletter</h2>
-		<Newsletter />
-	</div>
-	<div>
-		<Map />
 	</div>
 		</main>
 		<footer class="flex flex-row bg-pink-200">
@@ -66,4 +52,3 @@ info.cph@ch.mofa.go.jp</p>
 	</body>
 	
 </html>
-

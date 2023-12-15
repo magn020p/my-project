@@ -3,13 +3,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
-  width: 50px;
-  height: 50px;
 }
 
 nav {
@@ -85,13 +81,13 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: #fff;
+    background-color: #ffc0cb;
     position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    top: 180px;
+    left: 10%;
+    width: 81%;
     z-index: 1;
+    
   }
 
   nav.active .menu li {
